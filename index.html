@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <canvas
+      id="canvas"
+      style="
+        background-color: white;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsIAAA7CARUoSoAAAAE+SURBVDhPrVTNSsNAEP52Nj8kIQWPveYtBCkk1zyCgvRJ+hJKH8Vjj+LBtxAPiiIkgTQ/u+4mpETTmNr2g4Fh5pvZzTeTZfP5XMZxjLquIaVElmXwfb/xOWd4fPrC23sBxoDZzMDV5QWIoMCQJAk8z1M5BtM0sdlsgCiKVG2Lsix3ft9ZrVZSm0ZVib0cHVwul7I565ygPM93/QzDmOytZRhDmqYg27abvNaway6EQFVVKioGtdttCSFqZcOc67ogLagG5xzdDUmp3vpDRXSciCtrc+3BLXSMPj7Lkz65L9PLaw6mpzcp3IGEu/Uz6H79cCB9mua6HFgswtG96hL9PfyLfH1zK8kwxtdg+k4/GZaphtKf0n8b/OYXRQHat0/HNta7TJZlHVs/qHMcZ8/mntieBUEgwzBsfqVzPF/fFiL7OgUi8agAAAAASUVORK5CYII=);
+      "
+      width="759"
+      height="460"
+    ></canvas>
+
+    <div class="container">
+      <div class="entryPoint">
+        <p class="ecrire">
+          Ecriver une fonction (par exemple : <strong>3*exp(sqrt(-x)/x)</strong> )
+        </p>
+        <p>
+          <strong>Fonction</strong> <i>f(x)</i>: <input type="text" id="f_x" />
+          <input type="button" value="Tracer" onclick="draw_curve()" />
+        </p>
+        <p>
+         <p><strong>Echelle</strong>:
+          <input
+            type="text"
+            id="echelle"
+            value="40"
+            size="1"
+          /></p> 
+        </p>
+        <input type="button" id="reInit" value="Dessiner une autre" />
+      </div>
+
+      <div class="history">
+        <p class="ecrire">Historique:</p>
+        <div class="les">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/index.js"></script>
+  </body>
+</html>
